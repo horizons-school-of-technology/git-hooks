@@ -3,7 +3,7 @@
 set -e
 
 if [ -z "`git config --global --get push.default`" ]; then
-    git config --global push.default simple
+    git config --global push.default current
     echo "Updated Git config push.default"
 fi
 
